@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test user</title>
+
+  <style>
+    .api-form-wrap {
+      width: 300px;
+      padding: 10px 20px;
+      border: 1px dashed #999;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .api-form-wrap p {
+      margin: 0 0 5px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .api-form-wrap button {
+      width: 100%;
+      padding: 6px 20px;
+      margin-top: 20px;
+    }
+    .api-field label {
+      display: inline-block;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="api-form-wrap">
+  <p>users.add</p>
+  <form action="/api/addUser" method="post">
+    <div class="api-field">
+      <label>name</label>
+      <input type="text" name="name">
+    </div>
+    <div class="api-field">
+      <label>password</label>
+      <input type="text" name="password">
+    </div>
+    <button>submit</button>
+  </form>
+</div>
+
+<div class="api-form-wrap">
+  <p>users.del</p>
+  <form action="/api/deleteUser" method="post">
+    <div class="api-field">
+      <label>id</label>
+      <input type="text" name="id">
+    </div>
+    <button>submit</button>
+  </form>
+</div>
+
+<div class="api-form-wrap">
+  <p>users.update</p>
+  <form action="/api/updateUser" method="post">
+    <div class="api-field">
+      <label>id</label>
+      <input type="text" name="id">
+    </div>
+    <div class="api-field">
+      <label>name</label>
+      <input type="text" name="name">
+    </div>
+    <div class="api-field">
+      <label>password</label>
+      <input type="text" name="password">
+    </div>
+    <button>submit</button>
+  </form>
+</div>
+
+<div class="api-form-wrap">
+  <p>users.avatar</p>
+  <form action="/api/updateUserAvatar" method="post" enctype="multipart/form-data">
+    <div class="api-field">
+      <label>id</label>
+      <input type="text" name="id">
+    </div>
+    <div class="api-field">
+      <input type="file" name="avatar">
+    </div>
+    <button>submit</button>
+  </form>
+</div>
+
+</body>
+</html>

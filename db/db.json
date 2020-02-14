@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": "001",
+      "name": "admin",
+      "password": "admin",
+      "avatar": "/1581653007036.png"
+    },
+    {
+      "id": "002",
+      "name": "Chen",
+      "password": "Chen",
+      "avatar": "/1581653063901.png"
+    },
+    {
+      "id": "1581567768985",
+      "name": "111",
+      "password": "222"
+    },
+    {
+      "name": "Jack123",
+      "password": "123dddasdf",
+      "id": "uplUCfHb"
+    },
+    {
+      "name": "aaa",
+      "password": "aaaaa",
+      "id": "0tT-yYb8"
+    }
+  ],
+  "files": [
+    {
+      "fileId": "1581652968053",
+      "url": "/1581652968053.png",
+      "id": "lUkbWbVA"
+    },
+    {
+      "fileId": "1581653007036",
+      "url": "/1581653007036.png",
+      "id": "wD69zQv8"
+    },
+    {
+      "fileId": "1581653063901",
+      "url": "/1581653063901.png",
+      "id": "827d3rix"
+    }
+  ]
+}

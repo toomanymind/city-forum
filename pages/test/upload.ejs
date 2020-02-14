@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>test upload</title>
+
+  <style>
+    .api-form-wrap {
+      width: 300px;
+      padding: 10px 20px;
+      border: 1px dashed #999;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .api-form-wrap p {
+      margin: 0 0 5px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .api-form-wrap button {
+      width: 100%;
+      padding: 6px 20px;
+      margin-top: 20px;
+    }
+    .api-field label {
+      display: inline-block;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="api-form-wrap">
+  <p>upload</p>
+  <form action="/api/upload" method="post" enctype="multipart/form-data">
+    <div class="api-field">
+      <input type="file" name="file">
+    </div>
+    <button>submit</button>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "ignore": [
+    "pages/!route.js",
+    "files/*.*",
+    "db/db.json",
+    "session/session.json"
+  ]
+}
