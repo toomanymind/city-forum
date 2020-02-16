@@ -15,7 +15,7 @@ class Session {
     }
     this.timer = setTimeout(() => {
       sessionManager.unset(this.userId)
-    }, 60 * 60 * 1000)
+    }, 10 * 60 * 60 * 1000)
   }
 }
 
