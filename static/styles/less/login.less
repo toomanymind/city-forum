@@ -1,0 +1,201 @@
+// 页面大部分font-size为12px，部分为14px
+@words-size2: 14px;
+@main-color: #4986d0;
+@main-margin-bottom: 15px;
+@margin-botton: 12px;
+@input-radius: 3px;
+
+header {
+    height: 75px;
+    vertical-align: bottom;
+    img {
+        margin-top: 20px;
+    }
+    .welcom-words {
+        float: right;
+        margin-top: 45px;
+        margin-right: 5px;
+        font-size: @words-size2;
+    }    
+}
+.middle {
+    width: 100%;
+    height: 500px;
+    background-color: #f7f7f7;
+    // 版心
+    .w {
+        height: 100%;
+        // 左边的图片
+        .bg {
+            float: left;
+        }
+        // 右边的登录信息 
+        .login {
+            position: relative;
+            // 浮动的两个图
+            span.words {
+                position: absolute;
+                right: 42px;
+                top: 0px;
+                width: 125px;
+                height: 25px;
+                padding: 2px 10px;
+                line-height: 25px;
+                background: url(../../images/loginWin_icons.png) no-repeat 0 -66px;
+            }
+            span.img {
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                width: 42px;
+                height: 42px;
+                background: url(../../images/loginWin_icons.png) no-repeat 0 -110px;
+            }
+            float: right;
+            margin-top: 35px;
+            padding: 60px 40px 20px;
+            width: 350px;
+            height: 430px;
+            background-color: #fff;
+            // 登录信息上半部分-form信息
+            .login-info {
+                height: 235px;
+                border-bottom: 1px solid #e5e5e5;
+                // 用户名密码input
+                input[type=text],
+                input[type=password] {
+                    margin-bottom: @main-margin-bottom;
+                    padding: 0 10px;
+                    width: 100%;
+                    height: 40px;
+                    border: 1px solid #e0e0e0;
+                    border-radius: @input-radius;
+                    font-size: @words-size2;
+                    &:focus {
+                        border-color: @main-color;
+                        outline:none;
+                    }
+                }
+                .login-info-check {
+                    input {
+                        margin-right: 5px;
+                    }
+                    a {
+                        float: right;
+                    }     
+                    margin-bottom: @main-margin-bottom;
+                }
+                button {
+                    margin-bottom: @main-margin-bottom;
+                    width: 100%;
+                    height: 40px;
+                    font-size: 18px;
+                    color: #fff;
+                    background-color: @main-color;
+                    border-radius: @input-radius;
+                }
+                .login-info-register {
+                    a {
+                        float: right;
+                        color: #2965B1;
+                    }
+                }
+        }
+        // 登录信息中间部分-其他账号登录切换
+        .switch-info {
+                margin-top: @main-margin-bottom;
+                div {
+                width: 100%;
+                height: 28px;
+                vertical-align: middle;
+                span {
+                    float: left;
+                    line-height: 28px;
+                }
+                ul {
+                    float: left;
+                    li {
+                        float: left;
+                        margin-right: 15px;
+                        a {
+                            display: inline-block;
+                            width: 28px;
+                            height: 28px;
+                            background-color: pink;
+                        }
+                        &:nth-child(1) {
+                            a {
+                                background: url(../../images/loginWin_icons.png) no-repeat 0 -207px;
+                            }
+                        }
+                        &:nth-child(2) {
+                            a {
+                                background: url(../../images/loginWin_icons.png) no-repeat -44px -207px;
+                            }
+                        }
+                        &:nth-child(3) {
+                            a {
+                                background: url(../../images/loginWin_icons.png) no-repeat -88px -207px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 登录信息下半部分-其他信息
+        .online-info {
+            width: 100%;
+            height: 40px;
+            margin-top: 55px;
+            span {
+                font-size: 14px;
+                color: #333;
+                &.online-num {
+                    float: left;
+                }
+                &.safari {
+                    float: right;
+                }
+            }
+        } 
+        }
+    }
+}
+
+footer {
+        padding-top: 80px;
+        height: 210px;
+    .w {
+        ul {
+            width: 800px;
+            height: 14px;
+            margin: 0 auto @margin-botton;
+            &.links li {
+                float: left;
+                padding: 0 10px 0 0;
+                a {
+                    &:hover {
+                        color: red;
+                    }
+                    padding-right: 10px;
+                }
+                &:nth-child(-n+6)::after {
+                    content: "|"
+                }
+                a.child {
+                    color: #D26B6E;
+                    &:hover {
+                        color: #D26B6E;
+                    }
+                }
+            }
+        }
+        p.copyright {
+            text-align: center;
+            margin-bottom: @margin-botton;
+            a {
+                margin-left: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,176 @@
+header {
+  height: 75px;
+  vertical-align: bottom;
+}
+header img {
+  margin-top: 20px;
+}
+header .welcom-words {
+  float: right;
+  margin-top: 45px;
+  margin-right: 5px;
+  font-size: 14px;
+}
+.middle {
+  width: 100%;
+  height: 500px;
+  background-color: #f7f7f7;
+}
+.middle .w {
+  height: 100%;
+}
+.middle .w .bg {
+  float: left;
+}
+.middle .w .login {
+  position: relative;
+  float: right;
+  margin-top: 35px;
+  padding: 60px 40px 20px;
+  width: 350px;
+  height: 430px;
+  background-color: #fff;
+}
+.middle .w .login span.words {
+  position: absolute;
+  right: 42px;
+  top: 0px;
+  width: 125px;
+  height: 25px;
+  padding: 2px 10px;
+  line-height: 25px;
+  background: url(../../images/loginWin_icons.png) no-repeat 0 -66px;
+}
+.middle .w .login span.img {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 42px;
+  height: 42px;
+  background: url(../../images/loginWin_icons.png) no-repeat 0 -110px;
+}
+.middle .w .login .login-info {
+  height: 235px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.middle .w .login .login-info input[type=text],
+.middle .w .login .login-info input[type=password] {
+  margin-bottom: 15px;
+  padding: 0 10px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.middle .w .login .login-info input[type=text]:focus,
+.middle .w .login .login-info input[type=password]:focus {
+  border-color: #4986d0;
+  outline: none;
+}
+.middle .w .login .login-info .login-info-check {
+  margin-bottom: 15px;
+}
+.middle .w .login .login-info .login-info-check input {
+  margin-right: 5px;
+}
+.middle .w .login .login-info .login-info-check a {
+  float: right;
+}
+.middle .w .login .login-info button {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #4986d0;
+  border-radius: 3px;
+}
+.middle .w .login .login-info .login-info-register a {
+  float: right;
+  color: #2965B1;
+}
+.middle .w .login .switch-info {
+  margin-top: 15px;
+}
+.middle .w .login .switch-info div {
+  width: 100%;
+  height: 28px;
+  vertical-align: middle;
+}
+.middle .w .login .switch-info div span {
+  float: left;
+  line-height: 28px;
+}
+.middle .w .login .switch-info div ul {
+  float: left;
+}
+.middle .w .login .switch-info div ul li {
+  float: left;
+  margin-right: 15px;
+}
+.middle .w .login .switch-info div ul li a {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-color: pink;
+}
+.middle .w .login .switch-info div ul li:nth-child(1) a {
+  background: url(../../images/loginWin_icons.png) no-repeat 0 -207px;
+}
+.middle .w .login .switch-info div ul li:nth-child(2) a {
+  background: url(../../images/loginWin_icons.png) no-repeat -44px -207px;
+}
+.middle .w .login .switch-info div ul li:nth-child(3) a {
+  background: url(../../images/loginWin_icons.png) no-repeat -88px -207px;
+}
+.middle .w .login .online-info {
+  width: 100%;
+  height: 40px;
+  margin-top: 55px;
+}
+.middle .w .login .online-info span {
+  font-size: 14px;
+  color: #333;
+}
+.middle .w .login .online-info span.online-num {
+  float: left;
+}
+.middle .w .login .online-info span.safari {
+  float: right;
+}
+footer {
+  padding-top: 80px;
+  height: 210px;
+}
+footer .w ul {
+  width: 800px;
+  height: 14px;
+  margin: 0 auto 12px;
+}
+footer .w ul.links li {
+  float: left;
+  padding: 0 10px 0 0;
+}
+footer .w ul.links li a {
+  padding-right: 10px;
+}
+footer .w ul.links li a:hover {
+  color: red;
+}
+footer .w ul.links li:nth-child(-n+6)::after {
+  content: "|";
+}
+footer .w ul.links li a.child {
+  color: #D26B6E;
+}
+footer .w ul.links li a.child:hover {
+  color: #D26B6E;
+}
+footer .w p.copyright {
+  text-align: center;
+  margin-bottom: 12px;
+}
+footer .w p.copyright a {
+  margin-left: 5px;
+}
