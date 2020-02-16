@@ -12,6 +12,7 @@ const auth = require('./server/auth')
 app.set('views', [path.join(__dirname, 'pages')])
 app.set('view engine', 'ejs')
 app.use(express.static('files'))
+app.use('/static', express.static('static'))
 app.use(cookieParser())
 app.use(bodyParser.json({ limit: '1mb' }))
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -33,4 +34,4 @@ app.use('/', route)
 
 
 
-app.listen(3030, () => console.log('app listening on port 3030!'))
+app.listen(8090, () => console.log('app listening on port 8090!'))
