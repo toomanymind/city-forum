@@ -9,9 +9,28 @@
 </head>
 <body>
 
-<a href="/api/logout">logout</a>
 
-<%=isLogined%>
+
+<a href="/api/logout">logout</a>
+<p>登录状态：<%= isLogined ? '已登录' : '未登录' %></p>
+<p><img src="<%= userInfo.avatar %>" alt=""></p>
+
+
+<% users.forEach(function(user) { %>
+<p style="color: #999;">
+  <%= user.name%> - <%= user.id %>
+  <% if (user.avatar) { %>
+  <img src="<%= user.avatar %>" alt="">
+  <% } %>
+</p>
+<% }) %>
+
+<div>
+
+
+
+
+</div>
 
 </body>
 </html>

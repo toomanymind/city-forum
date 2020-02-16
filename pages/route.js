@@ -1,5 +1,6 @@
 const express = require('express')
 let router = express.Router()
+const { models } = require('../db/connector')
 
 
 router.get('/', (req, res) => {
@@ -9,10 +10,10 @@ router.get('/login', (req, res) => {
   res.render('login')
 })
 router.get('/index', (req, res) => {
-  res.render('index', {})
+  res.render('index', {
+    users: models.users.getAll()
+  })
 })
-
-
 
 
 
